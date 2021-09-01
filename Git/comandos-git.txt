@@ -1,0 +1,50 @@
+- O que é?
+	- Sistema de controle de versão de arquivos que permite desenvolver projetos com vários colaboradores simultâneos
+	- Todas as versões ficam salvas e armazenadas sem o risco da perda dessas versões.
+	- Controle do colaborador que fez a alteração e detalha tudo o que foi alterado.
+
+Vantagens
+	- Trabalho em grupo, permite com que mais de um colaborador trabalhe no mesmo arquivo
+	- Leve prático e simplificado
+	- Totalmente offline até o momento da publicação (permite que seja trabalhado apenas localmente, não necessitando de rede para trabalhar)
+
+
+Comandos Fundamentais para usabilidade do Git e Github
+
+	git init - inicia o repositório vazio.
+		o diretório passsa a aceitar os comandos git.
+		tudo que for colocado na pasta o git passa a gerenciar
+		
+	git status - retorna o status atual do diretório
+
+    git add - adiciona arquivos ao git.
+		git add [file]
+		git add * (tudo)
+		git rm --cached[file]  - remove o arquivo
+
+    git commit - versiona o projeto
+		git commit -m"titulo da versão"
+		git rm --cached * - remove tudo
+		gera uma versão
+		passa para o head
+
+	git remote - configura um servidor remoto
+		criar repositório no git no github
+		git remote add (nome [se usa o origin]) link
+		prepara o arquivo para postar
+		sincroniza com o github
+		git remote (nome) - mostrar lista
+		está sincronizado com o repositório na nuvem
+
+	git push - envia a versão para o github (posta o projeto)
+		envia o conteudo da pasta para o servidor
+		git push
+
+        git push -f (ignora tudo que existe lá e substitui pelo oq eu tenho)
+
+	git pull - pega a informação da origem.
+		alterar no site
+		git pull
+
+	git clone - clona um repositório do github
+	git clone <link>
